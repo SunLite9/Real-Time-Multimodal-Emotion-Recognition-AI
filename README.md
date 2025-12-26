@@ -75,9 +75,9 @@ Real-time, browser→server demo that infers **audio**, **visual**, and **fused*
 
 > Ballpark from the built-in quick checks (your numbers will vary with mic, lighting, and datasets).
 
-- **Audio (RAVDESS, 7-class, windowed avg):** **~35–40% top-1**, **~90% top-5**.
-- **Face (FER-2013/test):** **~50% top-1**, **~95% top-5**.
-- **Fused (synthetic pairing):** **~55–60% top-1**  
+- **Audio (RAVDESS, 7-class, windowed avg):** **~50% top-1**, **~90% top-5**.
+- **Face (FER-2013/test):** **~60% top-1**, **~95% top-5**.
+- **Fused (synthetic pairing):** **~65% top-1**  
   *(pairs audio & face of same label from different datasets; not a true multimodal benchmark).*
 
 ---
@@ -116,4 +116,5 @@ uvicorn app:app --reload
 - **MediaPipe** — Face detection.
 - **FastAPI / Uvicorn** — WebSocket server runtime.
 - **NumPy / Librosa / PyTorch / timm** — DSP & model tooling.
+
 
